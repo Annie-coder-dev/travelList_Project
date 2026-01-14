@@ -1,6 +1,7 @@
+import Form from "./Form";
 
 export default function Main() {
   return (
-    <div>Main component</div>
+    <main><Form/></main>
   )
 }

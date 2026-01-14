@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Monoton&display=swap');
 
 * {
   margin: 0;
@@ -16,4 +16,61 @@ header h1{
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+}
+
+main{
+  font-family: "Manrope", system-ui;
+  padding: 1rem;
+  background-color: #5a3e2b;
+  color: #fff;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  
+}
+
+@media screen and (min-width: 650px) {
+  form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .select_amount{
+    width: 50%;
+    
+  } 
+
+  .select_amount p{
+    text-wrap: nowrap;
+  }
+
+  .add_trip{
+    width: 50%;
+    /* width: 100%; */
+    
+  }
+  
+}
+
+form .select_amount{
+  display: flex;
+  gap: 15px;
+
+  /* justify-content: ; */
+} 
+
+
+.add_trip{
+  display: flex;
+  gap: 10px;
+}
+
+form input{
+  width: 100%;
 }
