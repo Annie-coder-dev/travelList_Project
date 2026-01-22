@@ -1,4 +1,4 @@
-export function Display({ addNewItem }) {
+export function Display({ addNewItem, deleteItem }) {
   console.log(addNewItem);
 
   return (
@@ -10,7 +10,7 @@ export function Display({ addNewItem }) {
             <span>{x.amount}</span>
             <span>{x.item}</span>
             {/* <span>&times;</span> */}
-            <button>❌</button>
+            <button onClick={() => deleteItem(x.item)}>❌</button>
           </li>
         ))}
       </ul>
